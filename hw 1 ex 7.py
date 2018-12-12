@@ -5,6 +5,9 @@ Created on Mon Dec 10 18:51:55 2018
 @author: Elena
 """
 
+#number of generated points
+N=10
+
 import matplotlib.pyplot as plt
 import random 
 import seaborn as sns
@@ -35,7 +38,6 @@ def sign (number):
 #cycle for 1000 runs
 all_cycles=[]
 all_missclass_probs=[]
-N=10
 
 for i in range(1000):
     print('cycle no', i)
