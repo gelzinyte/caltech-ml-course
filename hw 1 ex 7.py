@@ -118,8 +118,8 @@ for i in range(1000):
     all_missclass_probs.append(missclassification_prob)
 
         
-    line_x_pla=[-1,1]
-    line_y_pla=[(w[1]-w[0])/w[2], (-w[1]-w[0])/w[2]]
+line_x_pla=[-1,1]
+line_y_pla=[(w[1]-w[0])/w[2], (-w[1]-w[0])/w[2]]
     
     
     
@@ -136,10 +136,6 @@ sns.scatterplot(data_x, data_y, hue=data_labels, \
                                            sns.xkcd_rgb['denim blue']]))
 
 #plot which points were misclassified   
-#get line parameters y=mx+c
-line_x_pla=[-1,1]
-line_y_pla=[(w[1]-w[0])/w[2], (-w[1]-w[0])/w[2]]
-
 
 f2=plt.figure(2)
 plt.axis([-1,1,-1,1])
