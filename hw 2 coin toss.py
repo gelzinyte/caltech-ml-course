@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Dec 20 14:49:03 2018
+
+@author: Elena
+"""
+
 import numpy as np 
 import random 
 import matplotlib.pyplot as plt
@@ -9,7 +16,7 @@ vmin_dist=[]
 
 print_step=400
 #simulation run 100,000 times
-for k in range(100000):
+for k in range(10000):
     if k%print_step==0:
         print(k)
     coins=[]
@@ -49,7 +56,7 @@ plt.title('\'Heads\' frequency distribution for coin with the lowest frequency')
 
 
 plt.show()
-print('average for c1', np.average(v1_dist))
+print('average for c1', np.average(vmin_dist))
 
 
 
